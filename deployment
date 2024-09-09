@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Create a New Repository on GitHub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #0366d6;
+            text-align: center;
+            border-bottom: 2px solid #0366d6;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #24292e;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #586069;
+        }
+        a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        ol, ul {
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 20px 20px 20px 40px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .step {
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>How to Create a New Repository on GitHub</h1>
+    
+    <div class="step">
+        <h2>Step 1: Sign up for a GitHub account</h2>
+        <p>If you don't have a GitHub account, go to <a href="https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home" target="_blank">github.com</a> and click on "Sign up".</p>
+    </div>
+    
+    <div class="step">
+        <h2>Step 2: Log in to your GitHub account</h2>
+        <p>Visit the <a href="https://github.com/login" target="_blank">GitHub login page</a> and enter your credentials.</p>
+    </div>
+    
+    <div class="step">
+        <h2>Step 3: Create a new repository</h2>
+        <ol>
+            <li>Click the "+" icon in the top-right corner of the page.</li>
+            <li>Select "New repository" from the dropdown menu.</li>
+        </ol>
+    </div>
+    
+    <div class="step">
+        <h2>Step 4: Set up your repository</h2>
+        <ol>
+            <li>Choose a name for your repository.</li>
+            <li>Optionally, add a description.</li>
+            <li>Choose whether the repository should be public or private.</li>
+            <li>Check the box to initialize the repository with a README file.</li>
+            <li>Click the "Create repository" button.</li>
+        </ol>
+    </div>
+    
+    <div class="step">
+        <h2>Step 5: Your repository is ready!</h2>
+        <p>Congratulations! You've successfully created a new repository on GitHub.</p>
+    </div>
+    
+    <div class="step">
+        <h2>Step 6: Add files to your repository</h2>
+        <h3>Option 1: Creating a new file</h3>
+        <p>Click on "creating a new file" and paste your HTML code or write your code directly in the new file.</p>
+        
+        <h3>Option 2: Uploading an existing file</h3>
+        <p>Click on "uploading an existing file" to open the upload window. Select your HTML file from your computer and click on the "Commit changes" button.</p>
+    </div>
+</body>
+</html>
