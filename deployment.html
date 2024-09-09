@@ -5,70 +5,140 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How to Create a New Repository on GitHub</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             line-height: 1.6;
-            color: #333;
+            color: #e0e0e0;
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #f4f4f4;
+            background-color: #121212;
+            transition: background-color 0.3s ease;
         }
+
         h1 {
-            color: #0366d6;
+            color: #58a6ff;
             text-align: center;
-            border-bottom: 2px solid #0366d6;
+            border-bottom: 2px solid #58a6ff;
             padding-bottom: 10px;
+            background-color: #1f1f1f;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
+
         h2 {
-            color: #24292e;
+            color: #58a6ff;
             margin-top: 30px;
         }
+
         h3 {
-            color: #586069;
+            color: #8b949e;
         }
+
         a {
-            color: #0366d6;
+            color: #58a6ff;
             text-decoration: none;
+            transition: color 0.3s ease;
         }
+
         a:hover {
+            color: #79c0ff;
             text-decoration: underline;
         }
+
         ol, ul {
-            background-color: #fff;
-            border-radius: 5px;
+            background-color: #1f1f1f;
+            border-radius: 10px;
             padding: 20px 20px 20px 40px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
+
         li {
             margin-bottom: 10px;
         }
+
         .step {
-            background-color: #fff;
-            border-radius: 5px;
+            background-color: #1f1f1f;
+            border-radius: 10px;
             padding: 20px;
             margin-bottom: 20px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-         .footer {
+
+        .step:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+        }
+
+        .footer {
             text-align: center;
             margin-top: 40px;
             padding: 20px;
-            background-color: #24292e;
-            color: #fff;
-            border-radius: 5px;
+            background-color: #1f1f1f;
+            color: #e0e0e0;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
+
+        .logo {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #58a6ff;
+        }
+
         .names {
             font-size: 18px;
         }
+
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #58a6ff;
+            color: #121212;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .theme-toggle:hover {
+            background-color: #79c0ff;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .step {
+            animation: fadeIn 0.5s ease forwards;
+            opacity: 0;
+        }
+
+        .step:nth-child(1) { animation-delay: 0.1s; }
+        .step:nth-child(2) { animation-delay: 0.2s; }
+        .step:nth-child(3) { animation-delay: 0.3s; }
+        .step:nth-child(4) { animation-delay: 0.4s; }
+        .step:nth-child(5) { animation-delay: 0.5s; }
+        .step:nth-child(6) { animation-delay: 0.6s; }
     </style>
 </head>
 <body>
+    <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
     <h1>How to Create a New Repository on GitHub</h1>
-    
     <div class="step">
         <h2>Step 1: Sign up for a GitHub account</h2>
+        <ol>
         <p>If you don't have a GitHub account, go to <a href="https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home" target="_blank">github.com</a> and click on "Sign up".</p>
+        </ol>
     </div>
     
     <div class="step">
@@ -140,8 +210,22 @@
         <h2>Congratulations! You have successfully built and deployed a static website using GitHub Pages.</h2>
     </div>
     <footer class="footer">
-        <div class="endquote">Made with <3 </div>
-        <div class="names">© <a href="https://www.linkedin.com/in/farhansden/" target="_blank">Farhan</a> and <a href="https://www.linkedin.com/in/adnan-safdari-6bb257305/" target="_blank">Adnan</a></div>
+        <div class="logo">©</div>
+        <div class="names">Farhan and Adnan</div>
     </footer>
+
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            const currentBg = getComputedStyle(body).backgroundColor;
+            if (currentBg === 'rgb(18, 18, 18)') {
+                body.style.backgroundColor = '#f4f4f4';
+                body.style.color = '#333';
+            } else {
+                body.style.backgroundColor = '#121212';
+                body.style.color = '#e0e0e0';
+            }
+        }
+    </script>
 </body>
 </html>
