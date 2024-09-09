@@ -96,23 +96,6 @@
             font-size: 18px;
         }
 
-        .theme-toggle {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            background-color: #58a6ff;
-            color: #121212;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .theme-toggle:hover {
-            background-color: #79c0ff;
-        }
-
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
@@ -215,19 +198,5 @@
         <div class="logo">©</div>
         <div class="names"><a href = "https://www.linkedin.com/in/farhansden/">Farhan</a> and <a href="https://www.linkedin.com/in/adnan-safdari-6bb257305/">Adnan</a></div>
     </footer>
-
-    <script>
-        function toggleTheme() {
-            const body = document.body;
-            const currentBg = getComputedStyle(body).backgroundColor;
-            if (currentBg === 'rgb(18, 18, 18)') {
-                body.style.backgroundColor = '#f4f4f4';
-                body.style.color = '#333';
-            } else {
-                body.style.backgroundColor = '#121212';
-                body.style.color = '#e0e0e0';
-            }
-        }
-    </script>
 </body>
 </html>
